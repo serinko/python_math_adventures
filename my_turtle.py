@@ -5,13 +5,18 @@ from turtle import *
 # forward(150)
 
 shape('turtle')
-def square():
+def square(sidelength=100):
     for i in range(4):
-        forward(100)
+        forward(sidelength)
         right(90)
 
-for i in range(60):
-    square()
+def triangle(sidelength=100):
+    for i in range(3):
+        forward(sidelength)
+        right(120)
+
+for i in range(70):
+    triangle(300)
     right(5)
 
 #
