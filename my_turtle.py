@@ -28,8 +28,10 @@ def polygon(sides=6, sidelength=100):
         turn_angle = 360/sides
         right(int(turn_angle))
 
-for i in range(70):
-    polygon(8,100)
+length = 5
+for i in range(60):
+    square(length)
+    length += 5
     right(5)
 
 my_screen = Screen()
