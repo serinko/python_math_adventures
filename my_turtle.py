@@ -28,11 +28,18 @@ def polygon(sides=6, sidelength=100):
         turn_angle = 360/sides
         right(int(turn_angle))
 
-length = 5
-for i in range(60):
-    square(length)
-    length += 5
-    right(5)
+# length = 5
+# for i in range(60):
+#     square(length)
+#     length += 5
+#     right(5)
+
+def star():
+    for i in range(5):
+        forward(300)
+        right(144)
+
+star()
 
 my_screen = Screen()
 # print(my_screen.canvheight)
