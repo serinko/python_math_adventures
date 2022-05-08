@@ -27,3 +27,6 @@ list.index(item) # returns index
 ```
 
 - Strings use indicies too (Can be reffered to, print len() etc)
+
+## Summation
+- Greek letter Sigma
