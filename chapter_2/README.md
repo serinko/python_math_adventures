@@ -30,3 +30,19 @@ list.index(item) # returns index
 
 ## Summation
 - Greek letter Sigma
+
+```python
+# Summation of all the numbers in the range from 1 to the given integer
+def mySum(num):
+    running_sum = 0
+    for i in range(1,num+1):
+        running_sum += i
+    return running_sum
+
+# Square + 1 summation
+def mySum2(num):
+    running_sum = 0
+    for i in range(num+1):
+        running_sum += i**2 + 1
+    return running_sum
+```
