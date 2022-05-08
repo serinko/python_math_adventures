@@ -18,3 +18,9 @@ def mySum2(num):
     for i in range(num+1):
         running_sum += i**2 + 1
     return running_sum
+
+def average3(numList):
+	return sum(numList) / len(numList)
+
+list = list(range(1,101))
+print(average3(list))

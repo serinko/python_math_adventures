@@ -2,22 +2,24 @@
 
 ## Basic Operators
 
-| **Operator** | **Syntax** |
-| --- | --- |
-| Addition | + |
-| Substraction | - |
-| Multiplication | * |
-| Division | / |
-| Exponent | ** |
+
+| **Operator**   | **Syntax** |
+| ---------------- | ------------ |
+| Addition       | +          |
+| Substraction   | -          |
+| Multiplication | *          |
+| Division       | /          |
+| Exponent       | **         |
 
 ## Notes
+
 When using + sign with strings, the strings concatenate.
 
 ```python
 # Enumerate function
 for index, name in enumerate(list):
 	print(f"{index} - {name}")
-	
+
 # Checking for type
 type(item) # return data type
 
@@ -29,6 +31,7 @@ list.index(item) # returns index
 - Strings use indicies too (Can be reffered to, print len() etc)
 
 ## Summation
+
 - Greek letter Sigma
 
 ```python
@@ -45,4 +48,12 @@ def mySum2(num):
     for i in range(num+1):
         running_sum += i**2 + 1
     return running_sum
+```
+
+## Average
+
+```python
+# Function finding average of any numerical list
+def average3(numList):
+	return sum(numList) / len(numList)
 ```
