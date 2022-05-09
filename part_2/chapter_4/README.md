@@ -1,10 +1,15 @@
 # Transforming and Storing Numbers with Algebra
+
 ## Solving First Degree Equations
+
 Say we have an equation to solve:
+
 ```latex
-$2x + 5 = 13$
+$2x+5=13$
 ```
+
 **Using Brute Force**
+
 ```python
 # Solving mathematical equation by brute force:
 
