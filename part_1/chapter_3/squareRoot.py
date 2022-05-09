@@ -16,4 +16,4 @@ def squareRoot(num,low,high):
             low = guess
     print(guess)
 
-squareRoot(60,7,8)
+squareRoot(5000,1,500)
