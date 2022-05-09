@@ -13,3 +13,20 @@ def factors(num):
             factors.append(i)
     return factors
 
+
+
+def greatest_common_factors(num1, num2):
+    '''Returns the greatest common factor (GCF) of two given numbers'''
+    factors_1 = []
+    factors_2 = []
+    common_factors = []
+    for i in range(1,num1+1):
+        if num1 % i == 0:
+            factors_1.append(i)
+    for i in range(1,num2+1):
+        if num2 % i == 0:
+            factors_2.append(i)
+    for i in factors_1:
+        if i in factors_2:
+            common_factors.append(i)
+    return common_factors[-1]
