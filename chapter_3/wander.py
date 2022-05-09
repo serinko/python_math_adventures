@@ -1,6 +1,8 @@
 from turtle import *
 from random import randrange
 
+speed(0)
+
 def wander():
     while True:
         fd(3)
