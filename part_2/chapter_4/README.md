@@ -30,6 +30,7 @@ plug()
 **Finding Formula for First-Degree Equations**
 
 ```latex
+\documentclass{article}
 \usepackage{amsmath}
 \begin{document}
 \begin{align*}
