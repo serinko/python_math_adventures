@@ -22,3 +22,17 @@ def plug():
         
 plug()
 ```
+
+**Finding Formula for First-Degree Equations**
+```latex
+\usepackage{amsmath}
+\begin{document}
+\begin{align*}
+	
+	ax+b &= cx+d
+	ax-cx &= d-b
+	x(a-c) &= \frac{d-b}{a-c}
+	
+\end{align*}
+\end{document}
+```
