@@ -21,6 +21,3 @@ def mySum2(num):
 
 def average3(numList):
 	return sum(numList) / len(numList)
-
-list = list(range(1,101))
-print(average3(list))

@@ -10,6 +10,8 @@
 | Multiplication | *          |
 | Division       | /          |
 | Exponent       | **         |
+| Modulo | % |
+
 
 ## Notes
 
