@@ -6,6 +6,7 @@
 # 5. Return the list of factors at the end.
 
 def factors(num):
+    '''Returns a list of the factors of num'''
     factors = []
     for i in range(1,num+1):
         if num % i == 0:
