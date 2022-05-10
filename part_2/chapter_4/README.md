@@ -51,3 +51,65 @@ def equation(a,b,c,d):
     '''
     return (d - b)/(a - c)
 ```
+
+## Solving Higher Degree Equations
+
+### Quadratic Equations
+
+General term for a quadratic equation 
+
+```latex
+$$
+ax^2 + bx + c = 0
+$$
+```
+The quadratic formula to isolate x is:
+
+```latex
+$$
+x = \frac{-b \pm \sqrt{xb^2-4ac}}{2a}
+$$
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
