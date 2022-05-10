@@ -64,12 +64,24 @@ ax^2 + bx + c = 0
 $$
 ```
 The quadratic formula to isolate x is:
-
 ```latex
 $$
 x = \frac{-b \pm \sqrt{xb^2-4ac}}{2a}
 $$
 ```
+
+A Python function would look like this:
+```python
+from math import sqrt
+
+def quad(a,b,c):
+    '''Returns the solution of an equation of the form: a*x**2 + b*x + c = 0
+    '''
+    x1 = (-b + sqrt(b**2 - 4 * a * c))/(2 * a)
+    x2 = (-b - sqrt(b**2 - 4 * a * c))/(2 * a)
+    return x1, x2
+```
+
 
 
 
