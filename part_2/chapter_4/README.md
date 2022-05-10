@@ -19,13 +19,9 @@ def plug():
         if 2*x + 5 == 13: # if it makes the equation true
             print("x = ", x) # print it out
         x += 1 # make x go up b 1 to test the next number
-      
+    
 plug()
 ```
-
-
-
-
 
 **Finding Formula for First-Degree Equations**
 
