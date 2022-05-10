@@ -54,7 +54,7 @@ def equation(a,b,c,d):
 
 ## Solving Higher Degree Equations
 
-### Quadratic Equations
+### 2nd Degree - Quadratic Equations
 
 General term for a quadratic equation 
 
@@ -81,8 +81,27 @@ def quad(a,b,c):
     x2 = (-b - sqrt(b**2 - 4 * a * c))/(2 * a)
     return x1, x2
 ```
+### 3rd Degree - Cubic Equation
 
+Example of a cubic equation:
+6x**3 + 31x**2 + 3x - 10 = 0
 
+Can be solved by a brute force plug program:
+```python
+# Solving mathematical equation by brute force:
+
+def g(x):
+    return 6*x**3 + 31*x**2 + 3*x - 10
+
+def plug():
+    x = -100 # start at -100
+    while x < 100: # go up to 100
+        if g(x) == 0: # if it makes the equation true
+            print("x =",x) # print it out
+        x += 1 # make x go up b 1 to test the next number
+
+plug()
+```
 
 
 
