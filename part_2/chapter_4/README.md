@@ -23,7 +23,7 @@ def plug():
 plug()
 ```
 
-**Finding Formula for First-Degree Equations**
+### Finding Formula for First-Degree Equations
 
 ```latex
 \documentclass{article}
@@ -33,8 +33,21 @@ plug()
 
 	ax+b &= cx+d
 	ax-cx &= d-b
-	x(a-c) &= \frac{d-b}{a-c}
+	x(a-c) &= d-b
+	x &= \frac{d-b}{a-c}
 
 \end{align*}
 \end{document}
+```
+
+### Writing the Equation() function
+Since we know that ax + b = cx + d can be described as x = (d-b)/(a-c), 
+a function for x can be written like this:
+
+```python
+def equation(a,b,c,d):
+    '''
+    Solves the equation of the form: ax + b = cx + d 
+    '''
+    return (d - b)/(a - c)
 ```
