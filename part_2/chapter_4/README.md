@@ -102,7 +102,15 @@ def plug():
 
 plug()
 ```
+## Solving Equations Graphically
 
+Using Processing to graph higher degree equations.
+
+- Examples can be seen here: [processing.org/examples/](https://processing.org/examples/)
+- Scetches in proccessing will contain setup() and draw() functions
+- setup() runce once with hitting the play button
+- draw() runs as as infinnite loop until stop button
+- Reference can be seen here: [processing.org/reference/](https://processing.org/reference/)
 
 
 
