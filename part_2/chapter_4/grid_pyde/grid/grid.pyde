@@ -21,12 +21,21 @@ def draw():
       
     background(255) #white)
     translate(width/2,height/2) # moves x,y origin to the middle of the screen
-    # setting cyan lines
+    # setting cyan lines (1=the thinnest)
     strokeWeight(1)
     
-    stroke(0,255,255)
+    stroke(0,255,255) #collor of lines (rgb)
+    
+    # create lines in for loop
+    # from xmin to xmax including xmax
     for i in range(xmin,xmax + 1):
         line(i*xscl,ymin*yscl,i*xscl,ymax*yscl)
+        
+    # same for y    
+    for i in range(ymin,ymax + 1):
         line(xmin*xscl,i*yscl,xmax*xscl,i*yscl)
         
-        
+    # Create axis
+    stroke(0) # black color
+    line(0,ymin*yscl,0,ymax*yscl)
+    line(xmin*xscl,0,xmax*xscl,0)
