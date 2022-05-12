@@ -102,7 +102,7 @@ def plug():
 
 plug()
 ```
-## Solving Equations Graphically
+## Solving Equations Graphically w Processing
 
 Using Processing to graph higher degree equations.
 
@@ -112,6 +112,11 @@ Using Processing to graph higher degree equations.
 - draw() runs as as infinnite loop until stop button
 - Reference can be seen here: [processing.org/reference/](https://processing.org/reference/)
 
+### Creating Your Own Graphing Tool
+
+- default screen size is 600x600 pixels
+- size() function changes the dimension
+- 
 
 
 
