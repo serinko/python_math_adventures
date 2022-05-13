@@ -174,10 +174,19 @@ def draw():
     ellipse(3*xscl,6*yscl,10,10)
 ```
 
+### Graphing an Equation
+```python
+def f(x):
+    return x**2    
+```
+This is function f(x), when Python returns the output of the function.
+In this case to square a number, but any equation can be added. 
+f(x) is a math commonly used name, but if needed any description is possible.
 
 
 
 
+6*x**3 + 31*x**2 + 3*x - 10 = 0
 
 
 

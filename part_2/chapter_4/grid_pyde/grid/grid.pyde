@@ -22,6 +22,9 @@ def draw():
     translate(width/2,height/2) # moves x,y origin to the middle of the screen
     grid(xscl,yscl) # draw grid
     
+def f(x):
+    return x**2    
+    
 def grid(xscl,yscl):
     #Draws grid for graphing  
     # setting cyan lines (1=the thinnest)
@@ -46,3 +49,5 @@ def grid(xscl,yscl):
     # # Test with a circle
     # fill(0)
     # ellipse(3*xscl,6*yscl,10,10)
+    
+    
