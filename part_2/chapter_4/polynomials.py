@@ -19,6 +19,7 @@ c = int(input("Enter 'c': "))
 right_side = int(input("Right side of the equation: "))
 
 x = quad(a,b,c) # returns tuple of (x1,x2)
+print(f"\nx = {quad(a,b,c)}")
 for i in x:
     equation_0 = 2 * i**2 + 7 * i - 15
     n=x.index(i)
