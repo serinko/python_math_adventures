@@ -21,9 +21,17 @@ def draw():
     background(255) #white)
     translate(width/2,height/2) # moves x,y origin to the middle of the screen
     grid(xscl,yscl) # draw grid
+    graphFunction()
     
 def f(x):
-    return x**2    
+    return x**2
+
+def graphFunction():
+    x = xmin
+    while x<=xmax:
+        fill(0)
+        line(x*xscl,f(x)*yscl,(x+0.1)*xscl,f(x+0.1)*yscl)
+        x+=0.1    
     
 def grid(xscl,yscl):
     #Draws grid for graphing  

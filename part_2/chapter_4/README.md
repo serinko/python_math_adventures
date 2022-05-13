@@ -184,7 +184,15 @@ In this case to square a number, but any equation can be added.
 f(x) is a math commonly used name, but if needed any description is possible.
 
 
-
+**Drawing the function**
+```python
+def graphFunction():
+    x = xmin
+    while x<=xmax:
+        fill(0)
+        line(x*xscl,f(x)*yscl,(x+0.1)*xscl,f(x+0.1)*yscl)
+        x+=0.1    
+```
 
 6*x**3 + 31*x**2 + 3*x - 10 = 0
 
