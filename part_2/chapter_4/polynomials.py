@@ -9,11 +9,16 @@ def quad(a,b,c):
 
 # Solving 2 * x**2 + 7*x - 15 = 0
 print(
-    "Testing our solution by pluging back to the equation:"
+    "\nSolving a quadratic equation: ax^2+bx+c=0\n"
 )
 
-x = quad(2,7,-15) # returns tuple of (x1,x2)
-right_side = int(input("What is the right side of the equation?"))
+
+a = int(input("Enter 'a': "))
+b = int(input("Enter 'b': "))
+c = int(input("Enter 'c': "))
+right_side = int(input("Right side of the equation: "))
+
+x = quad(a,b,c) # returns tuple of (x1,x2)
 for i in x:
     equation_0 = 2 * i**2 + 7 * i - 15
     n=x.index(i)
