@@ -281,7 +281,7 @@ x = -5, -2/3, 1/2
 $$
 ```
 
-
+note: Check polynomials.py in chapter_4 for solving more quadratic equations
 
 
 
