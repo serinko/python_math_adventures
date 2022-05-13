@@ -204,6 +204,19 @@ Applying our equation 6*x**3 + 31*x**2 + 3*x - 10 we can see that it's in 3 plac
 
 ### Using Guess and Check to Find the Roots
 
+6*x**3 + 31*x**2 + 3*x - 10 = 0
+
+Let's find the roots, by informmed automatized guessing and checking.
+with the function:
+```python
+def f(x):
+    return 6*x**3 + 31*x**2 + 3*x - 10
+```
+and our graph from the previous excercise, we can guess manually using Python console. 
+>>> f(0.5) 
+0.0
+A correct guess, but that is not always the case - so lets write a function to automatize that.
+
 
 
 
