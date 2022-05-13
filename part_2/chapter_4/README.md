@@ -120,7 +120,7 @@ Using Processing to graph higher degree equations.
   - the x- and y-coordinates of the begining
   - and the endpoints of the line
 
-**Code in Processing To Create a Grid With Axis in the Middle (600x600 screen)
+**Code in Processing To Create a Grid With Axis in the Middle (600x600 screen)**
 ```python
 # set tje range of x-values
 xmin = -10
