@@ -18,6 +18,6 @@ def guess():
             lower = midpt
     return midpt
 
-x=guess()
+x=-2/3
 
-print(x,f(x))
+print(f(x))

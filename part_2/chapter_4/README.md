@@ -245,10 +245,41 @@ x=guess()
 
 print(x,f(x))
 ```
+1) Declare function with the equation to solve
+2) create average function
+3) write a guess() function informed by the graph spectre of possible soultions
+4) range(20) loop averaging the guess spectre
+5) always changing middle point to the average of last two points
+6) if the output == 0 we have the root as the original equation suppose to equal 0
+7) if we guess too high the mid point is our upper limit and vise versa
+8) we return the last mid point if we have not return the solution within 20 guesses
 
+**In this case:**
+- the guess returning midpt is ~-0.66666698, very very near to -2/3
+- the f(x) using the returned guess as x returns 9.642708896251406e-06
+- **NOTE:** the *e-06* in the end is a scientific notation which means that we need to taje the decimal 6 places to the left.
+- in our case = 0.00000964, that is very close to 0. 
+- we can then manually plug x=-2/3
+```
+>>> x=-2/3
+>>> f(x)
+0.0
+```
+BINGO!
 
-
-
+**SOLUTION**
+Our cubic equation:
+```latex
+$$
+6*x**3 + 31*x**2 + 3*x - 10 = 0
+$$
+```
+has three solutions - the places where the graph crossing *x-axis*:
+```latex
+$$
+x = -5, -2/3, 1/2
+$$
+```
 
 
 
