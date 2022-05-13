@@ -16,7 +16,7 @@ print(
 a = int(input("Enter 'a': "))
 b = int(input("Enter 'b': "))
 c = int(input("Enter 'c': "))
-right_side = int(input("Right side of the equation: "))
+right_side = int(input("Right side of the equation (expected 0): "))
 
 x = quad(a,b,c) # returns tuple of (x1,x2)
 print(f"\nx = {quad(a,b,c)}")
@@ -28,3 +28,7 @@ for i in x:
         f'\npluging x{n+1} to: 2x^2 + 7x - 15 shall = {right_side}.' 
         f'\nOur equation is: 2*{i}**2 + 7*{i} - 15 = {equation_0}'
     )
+    if equation_0 == right_side:
+        print(f"\nx{n+1} True")
+    else:
+        print(f"\nx{n+1} False")
