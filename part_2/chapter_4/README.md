@@ -165,7 +165,14 @@ def draw():
     line(xmin*xscl,0,xmax*xscl,0)
 ```
 
+**Adding a point (tiny ellipse)**
+```python
+# --snip--
 
+# Test with a circle
+    fill(0)
+    ellipse(3*xscl,6*yscl,10,10)
+```
 
 
 
