@@ -197,8 +197,10 @@ def graphFunction():
         line(x*xscl,f(x)*yscl,(x+0.1)*xscl,f(x+0.1)*yscl)
         x+=0.1    
 ```
+The solutions (the roots) of the equation are where the graph crosses x-axis
 
-6*x**3 + 31*x**2 + 3*x - 10 = 0
+Applying our equation 6*x**3 + 31*x**2 + 3*x - 10 we can see that it's in 3 places.
+
 
 
 
