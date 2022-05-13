@@ -202,6 +202,7 @@ The solutions (the roots) of the equation are where the graph crosses x-axis
 Applying our equation 6*x**3 + 31*x**2 + 3*x - 10 we can see that it's in 3 places.
 
 
+### Using Guess and Check to Find the Roots
 
 
 
