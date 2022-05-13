@@ -185,6 +185,10 @@ f(x) is a math commonly used name, but if needed any description is possible.
 
 
 **Drawing the function**
+- To make a line looking dense points, we will keep increasing x by 0.1 until xmax
+- we draw lines from every point to the next one, by tenth of a unit at a time
+- the distance is so tiny that the line doesnt appear straight
+- increment x by 0.1 for the next loop
 ```python
 def graphFunction():
     x = xmin
