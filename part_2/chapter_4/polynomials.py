@@ -18,17 +18,17 @@ b = int(input("Enter 'b': "))
 c = int(input("Enter 'c': "))
 right_side = int(input("Right side of the equation (expected 0): "))
 
-x = quad(a,b,c) # returns tuple of (x1,x2)
+solutions = quad(a,b,c) # returns tuple of (x1,x2)
 print(f"\nx = {quad(a,b,c)}")
-for i in x:
-    equation_0 = 2 * i**2 + 7 * i - 15
-    n=x.index(i)
+for x in solutions:
+    equation_0 = a*x**2 + b*x + c
+    n=solutions.index(x)+1
     print(
-        f'\nx{n+1}={i}'
-        f'\npluging x{n+1} to: 2x^2 + 7x - 15 shall = {right_side}.' 
-        f'\nOur equation is: 2*{i}**2 + 7*{i} - 15 = {equation_0}'
+        f'\nx{n}={x}'
+        f'\npluging x{n} to: 2x^2 + 7x - 15 shall = {right_side}.' 
+        f'\nOur equation is: 2*{x}**2 + 7*{x} - 15 = {equation_0}'
     )
     if equation_0 == right_side:
-        print(f"\nx{n+1} True")
+        print(f"\nx{n} True")
     else:
-        print(f"\nx{n+1} False")
+        print(f"\nx{n} False")
