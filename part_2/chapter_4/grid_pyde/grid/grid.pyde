@@ -24,14 +24,15 @@ def draw():
     graphFunction()
     
 def f(x):
-    return x**2
+    return 6*x**3 + 31*x**2 + 3*x - 10
 
 def graphFunction():
     x = xmin
     while x<=xmax:
         fill(0)
         line(x*xscl,f(x)*yscl,(x+0.1)*xscl,f(x+0.1)*yscl)
-        x+=0.1    
+        x+=0.1   
+        stroke(255,0,0) 
     
 def grid(xscl,yscl):
     #Draws grid for graphing  
