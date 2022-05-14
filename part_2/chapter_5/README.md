@@ -1,6 +1,6 @@
 # Transforming Shapes With Geometry
 
-## Drawing a Circle
+## Drawing a Circle (Processing)
 
 1. Define the size of the sketchbook - *coordinate plane*
 ```python
