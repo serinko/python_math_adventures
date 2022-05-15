@@ -76,5 +76,22 @@ def draw():
 1. Translate where you want the center of the circle to be (the top left corner of the grid)
 2. Rotate and put the objects along the circumference of the circle
 
+### Drawing a Circle of Circles
 
+- Rember the circle has 360 degrees
+- The centers of the circles need to be placed as 360/number of circles degrees of rotation
+
+In Processing:
+```python
+def setup():
+    size(600,600)
+    
+    
+def draw():
+    translate(width/2,height/2)
+    for i in range(12):
+        ellipse(200,0,50,50)
+        rotate(radians(360/12))
+```
+- note that we use `radians(# degress)` to convert to radians
 
