@@ -96,9 +96,34 @@ def draw():
 - note that we use `radians(# degress)` to convert to radians
 
 ### Drawing a Circle of Squares
+```python
 def draw():
     translate(width/2,height/2)
     for i in range(12):
         rect(200,0,50,50)
         rotate(radians(360/12))
 ```
+
+## Animating Objects
+
+Normally rotation happens instantlly so we only see the result. Let's use the time variable `t` and initialize it:
+- `t-0`
+```python
+t=0
+    
+def setup():
+    size(600,600)
+    
+    
+def draw():
+    global t
+    background(0)
+    translate(width/2,height/2)
+    rotate(radians(t))
+    for i in range(12):
+        ellipse(200,0,50,50)
+        rotate(radians(360/12))
+    t += 1    
+```
+
+
