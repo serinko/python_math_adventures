@@ -49,5 +49,7 @@ To move the canvas to the middle, use the width and height as variables:
 def draw():
     translate(width/2,height/2)
 ```
+- width and height refer to the parameters defined in `setup(width, height)` function
+
 
 
