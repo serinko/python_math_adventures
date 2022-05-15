@@ -1,7 +1,12 @@
 def setup():
     size(600,600)
     
+    
 def draw():
-    ellipse(200,100,20,20)
+    translate(width/2,height/2)
+    rect(50,100,100,60)
+    
+
+
     
     
