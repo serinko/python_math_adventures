@@ -95,3 +95,10 @@ def draw():
 ```
 - note that we use `radians(# degress)` to convert to radians
 
+### Drawing a Circle of Squares
+def draw():
+    translate(width/2,height/2)
+    for i in range(12):
+        rect(200,0,50,50)
+        rotate(radians(360/12))
+```

@@ -4,7 +4,9 @@ def setup():
     
 def draw():
     translate(width/2,height/2)
-    rect(50,100,100,60)
+    for i in range(12):
+        rect(200,0,50,50)
+        rotate(radians(360/12))
     
 
 
