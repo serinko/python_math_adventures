@@ -125,5 +125,48 @@ def draw():
         rotate(radians(360/12))
     t += 1    
 ```
+### Rotating the Individual Squares
+Change the code inside the draw() function:
+```python
+t=0
 
+def setup():
+    size(600,600)
+    
+def draw():
+    global t
+    background(0)
+    translate(width/2,height/2)
+    rotate(radians(t))
+    for i in range(12):
+    
+        translate(200,0)
+        rotate(radians(t))
+        rect(0,0,50,50)
+        rotate(radians(360/12))
+    t += 1    
+```
 
+This creates a bit of a strange behaviour. PErhaps nice but unexpected. Our code shall be always behaving in a way we intended so. 
+This behaviour is due to changing the center and orientation of the grid so much.
+After translating the location we need to rotate back to the center of the circle before translating the next square.
+We could use another translate() to undo the last one, but this would bring more complex problems.
+
+**pushMatrix()** and **popMatrix()** are build in methods in Processing to save and return the orientation of the grid.
+```python
+# --snip--
+
+def draw():
+    global t
+    background(0)
+    translate(width/2,height/2)
+    rotate(radians(t))
+    for i in range(12):
+        pushMatrix() # save this orientation
+        translate(200,0)
+        rotate(radians(t))
+        rect(0,0,50,50)
+        popMatrix() # return the saved orientation
+        rotate(radians(360/12))
+    t += 1    
+```

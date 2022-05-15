@@ -10,6 +10,9 @@ def draw():
     translate(width/2,height/2)
     rotate(radians(t))
     for i in range(12):
-        rect(200,0,50,50)
+    
+        translate(200,0)
+        rotate(radians(t))
+        rect(0,0,50,50)
         rotate(radians(360/12))
     t += 1    
