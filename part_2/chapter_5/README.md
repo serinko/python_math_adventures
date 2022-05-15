@@ -51,5 +51,30 @@ def draw():
 ```
 - width and height refer to the parameters defined in `setup(width, height)` function
 
+### Rotating Objects with rotate()
+ 
+- *Rotation* is a transformation moving object around a center point.
+- The `rotate()` function in Processing rotates the grid around (0,0)
+- units for rotation are radians. 
+  - In degrees a full rotation = 360
+  - In radians = 2pi * radians
+- The `radians()` function converts degrees to radians
+
+Example:
+```python
+def draw():
+    rotate(radians(20))
+    rect(50,100,100,60)
+```
+We can first move the grid and then rotate:
+```python
+def draw():
+    translate(200,200)
+    rotate(radians(20))
+    rect(50,100,100,60)
+```
+1. Translate where you want the center of the circle to be (the top left corner of the grid)
+2. Rotate and put the objects along the circumference of the circle
+
 
 
