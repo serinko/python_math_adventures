@@ -280,7 +280,7 @@ It is not an equilateral triangle but a right triangle.
 - `triangle(x-coor,y-coor, of all three verticles)`
 
 ### A 30-60-90 Triangle
-- A 30-60-90 triangle can be made by cutting the bottom triangle of inner equuilateral triangle in half.
+- A 30-60-90 triangle can be made by cutting the bottom triangle of inner equilateral triangle in half.
 - The ratio between the sides can be expressed:
   - 30degrees: x*\sqrt(3) [longer leg] :90 degrees: x [smaller leg] :60 degrees: 2*x [hypotenuse]:30 degrees 
   - Pythagorean Theoren: c2=a2+b2
