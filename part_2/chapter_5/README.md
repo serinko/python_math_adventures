@@ -310,4 +310,44 @@ def tri(length):
              length*sqrt(3)/2,length/2 ,
              )
 ```
+- tri function takes the variable length
+  - that is the hypotenuse of special 30-60-90 triangle, we cut the equilateral into
+- Find three vertices to draw our triangle inside the call to triangle function
+- Specify the location of all three by each having its x and y-coordinates
+  - `triangle(
+             0,-length,
+             -length*sqrt(3)/2,length/2,
+             length*sqrt(3)/2,length/2 ,
+             )`
+- 
 
+**Final rotating Equilateral Triangle:**
+
+```python
+
+def setup():
+    size(900,900)
+    background(7,8,9,)
+    rectMode(CENTER)
+    
+    
+t = 0
+
+def draw():
+    # background(0)
+    global t
+    
+    translate(width/2,height/2)
+    rotate(radians(t))
+    tri(400)
+    t += 0.175
+    
+def tri(length):
+    '''Draws an equilateral triangle around the center of triangle'''
+    fill(14,15,16)
+    triangle(
+             0,-length,
+             -length*sqrt(3)/2,length/2,
+             length*sqrt(3)/2,length/2 ,
+             )
+```
