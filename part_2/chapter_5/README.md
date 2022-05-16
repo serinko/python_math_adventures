@@ -251,3 +251,6 @@ def draw():
             rect(30*x,30*y,25,25)
             
 ```
+
+## Drawing Complex Patterns Using Triangles
+
