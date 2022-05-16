@@ -283,3 +283,31 @@ It is not an equilateral triangle but a right triangle.
 - A 30-60-90 triangle can be made by cutting the bottom triangle of inner equuilateral triangle in half.
 - The ratio between the sides can be expressed:
   - 30degrees: x*\sqrt(3) [longer leg] :90 degrees: x [smaller leg] :60 degrees: 2*x [hypotenuse]:30 degrees 
+  - Pythagorean Theoren: c2=a2+b2
+
+### Equilateral Triangle
+- based on the counting from 30-60-90 and the ratios, we can point calculate the position of the points
+- read from the code:
+```python
+def setup():
+    size(900,900)
+    rectMode(CENTER)
+    
+t = 0
+
+def draw():
+    global t
+    translate(width/2,height/2)
+    rotate(radians(t))
+    tri(200)
+    t += 0.5
+    
+def tri(length):
+    '''Draws an equilateral triangle around the center of triangle'''
+    triangle(
+             0,-length,
+             -length*sqrt(3)/2,length/2,
+             length*sqrt(3)/2,length/2 ,
+             )
+```
+
