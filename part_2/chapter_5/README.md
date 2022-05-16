@@ -351,3 +351,48 @@ def tri(length):
              length*sqrt(3)/2,length/2 ,
              )
 ```
+
+### Multiple Rotating Triangles
+
+```python
+def setup():
+    size(900,900)
+    # background(20,24,26)
+    rectMode(CENTER)
+    
+    
+t = 0
+
+def draw():
+    
+    global t
+    background(255)
+    translate(width/2,height/2)
+    for i in range(90):
+        # space the triangles evenly
+        # around the circle
+        rotate(radians(360/90))
+        # Spin each triangle
+        rotate(radians(360/90))
+        pushMatrix() # Save the orientation
+        # Go to circumference of circle
+        translate(200,0)
+        # Spin each triangle
+        rotate(radians(t))
+        # Draw the triangle
+        tri(150)
+        # Return to saved orientation
+        popMatrix()
+    t += 0.5
+    
+def tri(length):
+
+    noFill() # Makes the triangle transparent
+
+    triangle(
+             0,-length,
+             -length*sqrt(3)/2,length/2,
+             length*sqrt(3)/2,length/2 ,
+             )
+```
+- `noFill()` function make the triangles transparent
