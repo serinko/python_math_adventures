@@ -8,7 +8,7 @@ def draw():
     global t
     background(0)
     translate(width/2,height/2)
-    # rotate(radians(t))
+    rotate(radians(14*t))
     for i in range(12):
         pushMatrix() # save this orientation
         rectMode(CENTER)
