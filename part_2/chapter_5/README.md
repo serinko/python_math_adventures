@@ -190,3 +190,6 @@ def draw():
         rotate(radians(360/12))
     t += 1  
 ```
+
+- The `pushMatrix()` function saves the position of the coordinate system at the center of the circle of squares
+- the `popMatrix()` function instantly return to the center if the circle of the squares and repeat for all 12 circles
