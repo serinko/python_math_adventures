@@ -412,3 +412,68 @@ d = dist(width/2,height/2,mouseX,mouseY)
 # Draw the triangle
 tri(d)
 ```
+- to obfuscate the break in the patter on the right side of the screen
+- to have an even smooth patter, change the `rotate` function to:
+```
+rotate(radians(t+i*360/90))
+```
+- if we add one more function of rotate like in the upper code, we can see that in the place of each triangle is two triangles, creating star.
+- if we remove that and change the second rotate function into:
+```
+rotate(radians(t+2*i*360/90))
+```
+- Changing the phase by multiplying will change the pattern
+
+### Finalizing the Design
+- To add a nice rainbow, inside the for loop function, add: -
+  - colorMode(hue) to setup and
+  - stroke() function
+```
+stroke(360/90*i,255,255)
+```
+
+The final code looks like this:
+```python
+def setup():
+    size(900,900)
+    # background(20,24,26)
+    rectMode(CENTER)
+    
+t = 0
+
+def draw():
+    global t
+    background(255)
+    translate(width/2,height/2)
+    colorMode(HSB)
+
+    for i in range(90):
+        # space the triangles evenly
+        # around the circle
+        rotate(radians(360/90))
+        # Spin each triangle
+        # rotate(radians(360/90))
+        pushMatrix() # Save the orientation
+        # Go to circumference of circle
+        translate(200,0)
+        # Spin each triangle
+        rotate(radians(t+2*i*360/90))
+        # MAke a variable for length size
+        d = dist(width/2,height/2,mouseX,mouseY)
+        # Draw the triangle
+        tri(d)
+        stroke(360/90*i,255,255)
+        # Return to saved orientation
+        popMatrix()
+    t += 0.75
+    
+def tri(length):
+
+    noFill() # Makes the triangle transparent
+    triangle(
+             0,-length,
+             -length*sqrt(3)/2,length/2,
+             length*sqrt(3)/2,length/2 ,
+             )
+```
+
