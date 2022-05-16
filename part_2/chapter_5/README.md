@@ -193,3 +193,14 @@ def draw():
 
 - The `pushMatrix()` function saves the position of the coordinate system at the center of the circle of squares
 - the `popMatrix()` function instantly return to the center if the circle of the squares and repeat for all 12 circles
+
+**Rotating Squares Around the Center**
+
+The squares rotate around the upper left corner. To make them rotate around their center, add this line:
+```
+rectMode(CENTER)
+```
+To make the squares rotate faster, speed up the `t` time:
+```
+rotate(radians(5*t))
+```
