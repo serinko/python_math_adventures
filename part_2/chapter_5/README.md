@@ -221,3 +221,33 @@ def draw():
         for y in range(20):
             rect(30*x,30*y,25,25)
 ```
+
+### Adding the Rainbow Color
+- Processing `colorMode()` adds cool colour to sketches.
+- Switches between RGB and HSB mode
+  - RGB - Red,Blue,Green
+  - HSB - hue, saturation, brightness
+
+```
+d = dist(30*x,30*y,mouseX,mouseY)
+```
+- this function find a distance between two places - in this case between the square and the mouse.
+
+```python
+def setup():
+    size(900,900)
+    rectMode(CENTER)
+    colorMode(HSB)
+    
+def draw():
+    #set background white
+    background(0)
+    translate(15,15)
+    
+    for x in range(30):
+        for y in range(30):
+            d = dist(30*x,30*y,mouseX,mouseY)
+            fill(0.5*d,255,255)
+            rect(30*x,30*y,25,25)
+            
+```
