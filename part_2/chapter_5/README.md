@@ -405,3 +405,10 @@ def tri(length):
 ```
 rotate(radians(t+i))
 ```
+- for playfulness - make again variable d:
+```
+# Make a variable measuring distance of the mouse from the middle
+d = dist(width/2,height/2,mouseX,mouseY)
+# Draw the triangle
+tri(d)
+```
