@@ -253,4 +253,33 @@ def draw():
 ```
 
 ## Drawing Complex Patterns Using Triangles
+```python
+def setup():
+    size(900,900)
+    rectMode(CENTER)
+    
+t = 0
 
+def draw():
+    global t
+    translate(width/2,height/2)
+    rotate(radians(t))
+    triangle(0,0,100,100,200,-200)
+    t += 0.5
+```
+Such triangle rotate arounds one of its verticles, or points.
+It is not an equilateral triangle but a right triangle.
+
+
+ 
+- Equilateral triangle is made of three equal parts.
+- Three descending lines going from the center, meeting at 120 degrees
+
+**Triangle in Processing** 
+
+- `triangle(x-coor,y-coor, of all three verticles)`
+
+### A 30-60-90 Triangle
+- A 30-60-90 triangle can be made by cutting the bottom triangle of inner equuilateral triangle in half.
+- The ratio between the sides can be expressed:
+  - 30degrees: x*\sqrt(3) [longer leg] :90 degrees: x [smaller leg] :60 degrees: 2*x [hypotenuse]:30 degrees 
