@@ -204,3 +204,7 @@ To make the squares rotate faster, speed up the `t` time:
 ```
 rotate(radians(5*t))
 ```
+## Creating an Interactive Rainbow Grid
+
+### Drawing a Grid of Objects
+We will make a 12x12 grid we can re-use later in cellural automata.
