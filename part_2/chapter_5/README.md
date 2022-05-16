@@ -396,3 +396,12 @@ def tri(length):
              )
 ```
 - `noFill()` function make the triangles transparent
+- play changing the length argument in tri(length) - will change the pattern
+
+### Phase-Shifting The Rotation
+- *phase-shift* means to change the pattern in which the triangles rotate
+- each will be a little bit behind the next - giving the effect of a wave or cascade
+- as each is asighned to `i` number, we can add `i` to:
+```
+rotate(radians(t+i))
+```
