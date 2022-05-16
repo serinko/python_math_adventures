@@ -11,8 +11,9 @@ def draw():
     rotate(radians(t))
     for i in range(12):
         pushMatrix() # save this orientation
+        rectMode(CENTER)
         translate(200,0)
-        rotate(radians(t))
+        rotate(radians(5*t))
         fill(100,80,255)
         rect(0,0,50,50)
         popMatrix() # return the saved orientation
