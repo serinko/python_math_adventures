@@ -478,3 +478,8 @@ def tri(length):
 ```
 
 ## Creating Oscillations with Trigonometry
+
+```python
+def f(x):
+    return sin(x)
+```
