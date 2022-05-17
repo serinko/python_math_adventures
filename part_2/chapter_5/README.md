@@ -477,3 +477,4 @@ def tri(length):
              )
 ```
 
+## Creating Oscillations with Trigonometry
