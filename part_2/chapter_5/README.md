@@ -587,7 +587,7 @@ def polygon(sides,sz):
                )
     endShape(CLOSE)
 ```
-
+With this code, making a regular polygon with any number of sides shall be fairly easy.
 
 
 
