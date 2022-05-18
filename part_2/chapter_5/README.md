@@ -612,6 +612,7 @@ def draw():
 ```
 
 ### Making Sine Waves
+Here is a Processing code to visualize Sine waves
 
 ```python
 r1 = 200 # radius of a big circle
@@ -637,7 +638,7 @@ def draw():
     x = r1*cos(t)
     ellipse(x,y,r2,r2)
     # make a trail
-    # circleList.insert(0,y)
+    # circleList.insert(0,y) and slice to prevent endless computing
     circleList = [y] + circleList[:399]
     
     # Drawing a green line and ellipse
@@ -648,7 +649,7 @@ def draw():
     
     
     
-    # Loop over circleList to make a trail
+    # Loop over circleList to make a trail, using enumerate
     for i,c in enumerate(circleList):
         # small circle for trail:
         ellipse(400+i,c,5,5)
