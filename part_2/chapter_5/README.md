@@ -589,6 +589,29 @@ def polygon(sides,sz):
 ```
 With this code, making a regular polygon with any number of sides shall be fairly easy.
 
+**Adding Randomization to the Animation:**
+
+- Processing draws object in a constant loop.
+- add few random elements to the code:
+```python
+import random as r
+
+def setup():
+    size(900,900)
+    
+    
+def draw():
+    translate(width/2,height/2)
+    x = r.randrange(3,30)
+    y = r.randrange(40,400)
+    z = r.randrange(0,255)
+    polygon(x,y) # Defines the sides, vertices and its distance from the center
+    fill(z)
+
+# --snip--
+```
+
+
 
 
 
