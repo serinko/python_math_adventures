@@ -565,17 +565,26 @@ creates each vertex of a hexagon. When i = 0 the angle in () will be 0, when i =
 for i in range(n):
         vertex(r*cos(radians(360/n*i)),r*sin(radians(360/n*i)))
 ```
-The entire code can look like this:
+The entire code to draw any polygon, looks like this:
 ```python
 def setup():
-    size(600,600)
+    size(900,900)
     
     
-def draw(n=6,r=200):
+def draw(n=3,r=400):
     translate(width/2,height/2)
+    polygon(3,100) # Defines the sides, vertices and its distance from the center
+    
+def polygon(sides,sz):
+    '''draws a polygon given the number of sides and length from the center'''
+     
     beginShape()
-    for i in range(n):
-        vertex(r*cos(radians(360/n*i)),r*sin(radians(360/n*i)))
+    step = radians(360/sides)
+    for i in range(sides):
+        vertex(
+               sz * cos(i * step),
+               sz * sin(i * step)
+               )
     endShape(CLOSE)
 ```
 
