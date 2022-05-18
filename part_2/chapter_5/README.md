@@ -538,6 +538,46 @@ def draw():
     endShape(CLOSE)
 
 ```
+### Drawing a Hexagon with Loops
+- The function draw could look like this:
+```python
+def draw():
+    translate(width/2,height/2)
+    beginShape()
+    for i in range(6):
+        vertex(100,100)
+        rotate(radians(360/6))
+    endShape(CLOSE)
+```
+- Problem is that rotate cannot be used with shape definition as it rotates the entire coordinate system.
+- Solution is sine and cosine notation.
+
+**The expresion:**
+$$
+(r*cos(360/6*i), r*sin(360/6*i))
+$$
+creates each vertex of a hexagon. When i = 0 the angle in () will be 0, when i = 1, the angle will be 60 etc.
+
+- create variable `r`
+- create variable `n` for the number of vertices
+- general expression than looks like this:
+```
+for i in range(n):
+        vertex(r*cos(radians(360/n*i)),r*sin(radians(360/n*i)))
+```
+The entire code can look like this:
+```python
+def setup():
+    size(600,600)
+    
+    
+def draw(n=6,r=200):
+    translate(width/2,height/2)
+    beginShape()
+    for i in range(n):
+        vertex(r*cos(radians(360/n*i)),r*sin(radians(360/n*i)))
+    endShape(CLOSE)
+```
 
 
 
