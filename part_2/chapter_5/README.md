@@ -479,7 +479,70 @@ def tri(length):
 
 ## Creating Oscillations with Trigonometry
 
+- *Trigonometry* - The study of triangles, the right triangles and the ratio between the angles of the sides
+- Functions *sine* and *cosine* are used for oscillating waves
+- *sin* wave oscillating between 1 and -1 and the period of the wave is 2\pi
+
+**Right Triangle Sides:**
+
+- **Adjacsent** - the longer leg of the righ angle (b side)
+- **Opposite** - the shorter leg of the right angle (a side)
+- **Hypotenuse** - the longest side without (c side)
+
+**Trigonometry Functions**
+
+| **function** | **ratio** |
+| --- | --- |
+| *sin A* | opposite/ hypotenuse |
+| *cos A* | adjacsent/ hypotenuse |
+| *tan A* | opposite/ adjacsent |
+
 ```python
 def f(x):
     return sin(x)
 ```
+
+- Trig functions can be used to generate polygons with any number of sides as well as stars with any (odd) number of prongs.
+
+### Using Trigonometry for Rotations and Oscillations
+
+if: 
+
+*sin A = a/c* 
+
+then:
+
+*a = c Sin A*
+
+Yherefore the y-coordinate of a point ca be expressed as the distance from the origin times the sine of the angle the point makes with the  horizontal.
+
+### Writing Functions to Draw Polygons
+
+- Vertices are points rotating around center. This understanding make crating polygons very easy. 
+- Regular polygon is made by connecting certain number of points equally spaced around a circle.
+
+- Proccessing functions `beginShape()` and `endShape()` define any shape we want
+- the `vertex()` function is to define any points to build the shape
+
+```python
+def setup():
+    size(600,600)
+    
+def draw():
+    beginShape()
+    vertex(100,100)
+    vertex(100,200)
+    vertex(200,200)
+    vertex(200,100)
+    vertex(150,50)
+    endShape(CLOSE)
+
+```
+
+
+
+
+
+
+
+
