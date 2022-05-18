@@ -650,7 +650,7 @@ def draw():
     
     
     # Loop over circleList to make a trail, using enumerate
-    for i,c in enumerate(circleList):
+    for idx,vl in enumerate(circleList):
         # small circle for trail:
         ellipse(400+i,c,5,5)
             
