@@ -28,8 +28,8 @@ def draw():
     ellipse(x2,y2,2*r2,2*r2)
     
     #drawing dot
-    x3 = x2 + prop * (r2-r3) * cos(t)
-    y3 = y2 + prop * (r2-r3) * sin(t)
+    x3 = x2 + prop * (r2-r3) * cos(-((r1-r2)r2)*t)
+    y3 = y2 + prop * (r2-r3) * sin(-((r1-r2)r2)*t)
     fill(255,0,0)
     ellipse(x3,y3,2*r3,2*r3)
     
