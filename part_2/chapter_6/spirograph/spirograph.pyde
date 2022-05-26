@@ -16,7 +16,13 @@ def draw():
     translate(width/2,height/2)
     background(255)
     noFill()
+    
     #big circle
     stroke(0)
     ellipse(x1,y1,2*r1,2*r1)
+    
+    #circle 2
+    x2 = (r1-r2)
+    y2 = 0
+    ellipse(x2,y2,r2*2,r2*2)
     
