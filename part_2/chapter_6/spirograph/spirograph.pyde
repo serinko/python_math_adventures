@@ -22,7 +22,8 @@ def draw():
     ellipse(x1,y1,2*r1,2*r1)
     
     #circle 2
-    x2 = (r1-r2)
-    y2 = 0
+    x2 = (r1-r2)*cos(t)
+    y2 = (r1-r2)*sin(t)
     ellipse(x2,y2,2*r2,2*r2)
+    t += 0.05
     
