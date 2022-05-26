@@ -1,11 +1,11 @@
 r1 = 300.0 #radius of big circle
-r2 = 105.0 #radius of circle 2
+r2 = 175.0 #radius of circle 2
 r3 = 5.0 #radius of drawing "dot"
 
 #location of big circle
 x1 = 0
 y1 = 0
-prop = 0.8 #proportion variable
+prop = 0.9 #proportion variable
 t = 0 #time variable
 points = [] #empty list to put points in
 
