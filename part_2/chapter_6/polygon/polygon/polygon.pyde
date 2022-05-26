@@ -1,10 +1,16 @@
+import random as r
+
 def setup():
     size(900,900)
     
     
-def draw(n=3,r=400):
+def draw():
     translate(width/2,height/2)
-    polygon(3,100) # Defines the sides, vertices and its distance from the center
+    x = r.randrange(3,30)
+    y = r.randrange(40,400)
+    z = r.randrange(0,255)
+    polygon(x,y) # Defines the sides, vertices and its distance from the center
+    fill(z)
     
 def polygon(sides,sz):
     '''draws a polygon given the number of sides and length from the center'''

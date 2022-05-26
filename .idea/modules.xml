@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/Documents/.idea/Documents.iml" filepath="$USER_HOME$/Documents/.idea/Documents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gki_monitor/.idea/gki_monitor.iml" filepath="$PROJECT_DIR$/../gki_monitor/.idea/gki_monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python_crash_course_book/.idea/python_crash_course_book.iml" filepath="$PROJECT_DIR$/../python_crash_course_book/.idea/python_crash_course_book.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python_fun/.idea/python_fun.iml" filepath="$PROJECT_DIR$/../python_fun/.idea/python_fun.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python_math_adventures.iml" filepath="$PROJECT_DIR$/.idea/python_math_adventures.iml" />
