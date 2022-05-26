@@ -1,5 +1,5 @@
 
-## Creating Oscillations with Trigonometry
+# Creating Oscillations with Trigonometry
 
 - *Trigonometry* - The study of triangles, the right triangles and the ratio between the angles of the sides
 - Functions *sine* and *cosine* are used for oscillating waves
@@ -26,7 +26,7 @@ def f(x):
 
 - Trig functions can be used to generate polygons with any number of sides as well as stars with any (odd) number of prongs.
 
-### Using Trigonometry for Rotations and Oscillations
+## Using Trigonometry for Rotations and Oscillations
 
 if: 
 
@@ -38,7 +38,7 @@ then:
 
 Yherefore the y-coordinate of a point ca be expressed as the distance from the origin times the sine of the angle the point makes with the  horizontal.
 
-### Writing Functions to Draw Polygons
+## Writing Functions to Draw Polygons
 
 - Vertices are points rotating around center. This understanding make crating polygons very easy. 
 - Regular polygon is made by connecting certain number of points equally spaced around a circle.
@@ -60,7 +60,9 @@ def draw():
     endShape(CLOSE)
 
 ```
-### Drawing a Hexagon with Loops
+
+## Drawing a Hexagon with Loops
+ 
 - The function draw could look like this:
 ```python
 def draw():
@@ -133,7 +135,8 @@ def draw():
 # --snip--
 ```
 
-### Making Sine Waves
+## Making Sine Waves
+
 Here is a Processing code to visualize Sine waves
 
 ```python
@@ -179,11 +182,4 @@ def draw():
     
     t += 0.05
 ```
-
-
-
-
-
-
-
 
