@@ -24,5 +24,5 @@ def draw():
     #circle 2
     x2 = (r1-r2)
     y2 = 0
-    ellipse(x2,y2,r2*2,r2*2)
+    ellipse(x2,y2,2*r2,2*r2)
     
