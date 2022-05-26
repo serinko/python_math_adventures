@@ -191,3 +191,8 @@ def draw():
   
     t += 0.05
 ```
+## Creating a Spirograph Program
+
+*Spirograph* is a toy made up of two overlapping circular gears that slide against each other.
+The gears have holes to put pencil in to draw curvy designs. We use sine and cosine to program one.
+
